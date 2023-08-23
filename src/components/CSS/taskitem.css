@@ -1,0 +1,16 @@
+.list-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  
+  .list-item-number {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-right: 1rem;
+  }
+  
+  .list-item-content {
+    flex-grow: 1;
+  }
+  

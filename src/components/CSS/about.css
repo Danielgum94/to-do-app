@@ -1,0 +1,101 @@
+.about-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.about-box {
+  max-width: 800px;
+  padding: 28px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  animation: colorChange 4s infinite;
+}
+
+.about-title {
+  font-family: 'Belanosima', sans-serif;
+  font-size: 36px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.about-text {
+  font-family: 'Nunito', sans-serif;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.about-content {
+  text-align: center;
+}
+
+
+.developer-details {
+  margin-top: 30px;
+}
+
+.developer-details h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+
+/* Additional styling if desired */
+
+/* Center the content horizontally */
+.about-box {
+  margin: 0 auto;
+}
+
+/* Add some spacing between sections */
+.about-text {
+  margin-bottom: 20px;
+}
+
+.button-text {
+  font-family: 'Belanosima', sans-serif;
+  font-size: 18px;
+  color: #000000;
+  text-transform: uppercase;
+  margin-top: 5px;
+}
+
+.folded-edge {
+  position: relative;
+  width: 100%;
+  height: 100px;
+  background: linear-gradient(45deg, #f9f9f9, #eaeaea);
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.folded-edge::before {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  right: 0;
+  width: 0;
+  height: 0;
+  border-top: 50px solid transparent;
+  border-right: 50px solid #f9f9f9;
+  transform-origin: bottom right;
+  transform: rotate(180deg);
+}
+
+.folded-edge:hover {
+  transform: translateY(10px);
+  background: linear-gradient(45deg, #f9f9f9, #dcdcdc);
+}
+
+@media (max-width: 768px) {
+  .folded-edge {
+    height: 80px;
+  }
+}

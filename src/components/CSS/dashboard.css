@@ -1,0 +1,97 @@
+.dashboard-container {
+  font-family: 'Nunito', sans-serif;
+  display: flex;
+  height: 100%;
+}
+
+
+.sidebar {
+  background-color: #007bff;
+  color: #fff;
+  width: 220px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.sidebar-header {
+  margin-bottom: 20px;
+}
+
+.sidebar-menu {
+  margin-bottom: 20px;
+}
+
+.sidebar-link {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  text-decoration: none;
+  margin-bottom: 30px;
+}
+
+.sidebar-link-text {
+  color: #fff;
+  text-decoration: underline;
+}
+
+/* Rest of the CSS styles */
+
+.contact-details {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: lightyellow;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.contact-details h3 {
+  margin-top: 0;
+}
+
+.contact-details p {
+  margin-bottom: 5px;
+}
+
+
+
+.sidebar-link svg {
+  width: 1.6rem;
+  height: 1.6rem;
+  margin-right: 8px;
+}
+
+.logout-btn {
+  background-color: #fff;
+  color: #007bff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.dashboard-content {
+  flex: 1;
+  padding: 20px;
+}
+
+@media (max-width: 768px) {
+  .dashboard-container {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .sidebar-menu {
+    margin-bottom: 0;
+  }
+
+  .sidebar-link {
+    margin-bottom: 8px;
+  }
+}
